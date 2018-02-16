@@ -74,6 +74,12 @@ const config = {
         extensions: ['.ts', '.tsx', '.js', '.jsx']
     },
 
+    devServer: {
+        historyApiFallback: true,
+        contentBase: './',
+        hot: true
+    },
+
     devtool: 'inline-source-map',
 
     module: {
